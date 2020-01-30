@@ -1,38 +1,659 @@
-.App {
+html,body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+.flex-link{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    margin-top: 20px;
+
+}
+
+.link-box:hover{
+    text-decoration:  none;
+}
+
+.burger{
+  display: none;
+}
+
+
+
+
+body{
+  scroll-behavior: smooth;
+}
+
+h1,h2{
+  text-align: center;
+
+}
+
+
+.experience>h3{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+ul{
+  margin-bottom:  0 !important;
+
+
+
+
+}
+li{
+  display: inline-block;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+
+
+h2{
+  margin-bottom: 10%!important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+
+
+.skill-container>h3{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+
+
+.com-round{
+  text-align: center;
+
+}
+
+header{
+  color: white;
+  height: 800px;
+ display: flex !important;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-bottom: black solid 1px;
+}
+
+nav{
+  position: fixed;
+  color: white;
+
+}
+
+
+
+.natureHeader{
+  width: 100%;
+  height: 800px;
+  position: absolute;
+    left: 0;
+    top: 0;
+  z-index: -999999;
+  filter: brightness(50%);
+}
+
+.icon-scroll,
+.icon-scroll:before
+{
+position: absolute;
+left: 50%}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+section{
+
+   min-height: 650px;
+ padding-top: 5%;
+ }
+
+.presentation{
+  margin-left: 5% ;
+  width: 45%;
+}
+
+.presentation>p{
+  margin-bottom: 10%;
+}
+
+.photo{
+  width: 20%;
+  height: 400px;
+}
+
+.profil{
+  display: flex !important;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.marginright{
+  margin-right: 2%;
+}
+
+
+@keyframes scroll{
+0% {opacity: 1}
+100%{opacity: 0;
+  transform: translateY(46px)}
+}
+
+.line-weight{
+  line-height: 300%;
+}
+
+
+
+.fill-bar{
+
+  background-color: blue;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skill-container{
+
+  color: white;
+  background-color: darkslategrey;
+  background-attachment: revert;
+  background-size: contain;
+}
+
+.flex-competence{
+  display: flex !important;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+.skill-box{
+  width: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.round-skill{
+
+  border: dimgrey solid 10px ;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex !important;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+}
+
+.center-round{
+  position: relative ;
+  bottom: 90px;
+  font-size: 1.5em;
+
+
+}
+
+.progress{
+  background-color: dimgrey !important;
+  height: 10px !important;
+}
+
+.progress-bar {
+  animation: bar 1s ;
+  border-radius: 20px !important;
+
+}
+
+@keyframes bar {
+0%{
+  width: 0;
+}
+  100%{
+
+  }
+
+}
+
+.realisation-box{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 200px;
+  box-shadow: 5px 3px 3px 3px  black ;
+  text-align: center;
+}
+
+
+
+
+
+
+.realisation-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.realisation-images{
+  position: absolute !important;
+  width:300px;
+  height: 200px;
+  filter: brightness(50%);
+  z-index: 1;
+}
+
+.column{
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 20%;
+    margin-right: 5%;
+}
+ .mb2pc{
+   margin-bottom: 2%;
+ }
+
+ .link-real{
+   width: 20%;
+   text-decoration: none;
+   color: white;
+   border: white 1px solid;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 6%;
+ }
+ .link-real:hover{
+   text-decoration: none;
+   color: yellow;
+   border: yellow solid 1px;
+
+ }
+ .dates{
+   font-size: 25px;
+   position: absolute;
+
+   font-weight: bold;
+   width: 100%;
+   text-align: center;
+ }
+
+ .diplome{
+ display: flex;
+   flex-direction: column ;
+   align-items: center;
+
+ }
+
+
+ .flex-dip{
+   width: 80%;
+   display: flex;
+   justify-content: space-around;
+ }
+
+
+.left{
+  position: relative;
+  width: 145px;
+  left: 35%;
+  height: 200px;
+  margin-bottom: 5%;
+
+}
+.right{
+
+  position: relative;
+  width: 145px;
+  left: 59%;
+  height: 200px;
+  margin-bottom: 5%;
+
+}
+
+
+.experience>h3{
+  margin-bottom: 8%;
+}
+
+.titre-dip{
+  font-size: 20px ;
+  font-weight: bold;
+}
+
+.realisation{
+  background-image: url("images/abstract-1278044_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.z-index{
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+  color: white;
 }
+
+.doghnut{
+ width: 300px;
+ height: 150px;
+}
+
+
+#returnTopPage{
+  position: fixed;
+  bottom: 3%;
+  left:97%
+
+}
+
+.iconTopPage{
+  width: 40px;
+}
+
+.mb5pc{
+  margin-bottom: 5%;
+}
+
+.message-box{
+    display: flex;
+    justify-content: left;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 920px) {
+
+
+
+  h2{
+    font-size: 15px;
+  }
+
+  .column{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+ .dates{
+   position: relative;
+    text-align: center;
+
+ }
+
+ .left{
+  left: 0 ;
+ }
+
+ .right{
+   width: 100%;
+   left: 0;
+   text-align: center;
+
+ }
+
+ .photo{
+   width: 80%;
+   margin-right: auto;
+   margin-left: auto;
+ }
+
+ .experience{
+
+font-size: 15px;
+ }
+
+ .profil{
+   font-size: 15px;
+   flex-direction: column-reverse;
+   align-items: center;
+ }
+
+ footer{
+   font-size: 12px;
+ }
+
+.skill-container>h2{
+
+  font-size: 30px;
+
+
+}
+
+.skill-box>h3{
+  font-size: 20px;
+}
+
+.center-round{
+
+    position: relative ;
+    bottom: 110px;
+    font-size: 20px;
+
+}
+
+.com-round>h3{
+  font-size: 20px;
+
+}
+
+.icon-scroll{
+  top: 500px;
+}
+
+.ceter-mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.presentation{
+  width: 90%;
+}
+  .doghnut{
+    width: 200px;
+    height: 150px;
+  }
+
+  .dates{
+    display: block;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  #returnTopPage{
+    left: 88%;
+    opacity: 50%;
+  }
+
+  .menu{
+    display: none !important;
+  }
+
+
+
+ .burger:checked ~ div>.menu{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+     justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+ .flex-link{
+
+     flex-direction: row;
+     justify-content: space-around;
+     width: 100%;
+     height: 100px;
+     margin-top: 20px;
+ }
+
+.link-box{
+
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column{
+  height: 300px;
+}
+
+.alertMessage {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+  .linktitle{
+    width: 90%;
+  }
+
+  .burger{
+    position: relative;
+
+    display: inline-block !important;
+  }
+
+    .menu>.links,.navbar, .navbar-nav{
+        display: block!important;
+    }
+
+
+
+
+
+    input[type=checkbox] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+    }
+
+
+    input[type=checkbox] {
+
+        background-image:url("./images/menu-button_icon-icons.com_72989.png") ;
+        background-size: contain;
+        height: 19px;
+        width: 19px;
+
+
+    }
+
+    input[type="checkbox"]:checked {
+        background-image: url("images/cross-symbol_icon-icons.com_74149.png");
+        margin: 0px;
+        position: relative;
+
+    }
+
+    input[type="checkbox"]:checked:before {
+     display: block;
+     color: grey;
+     font-size: 13px;
+     position: absolute;
+ }
+
+    input[type="checkbox"]:checked ~ .navbar-nav{
+        overflow: hidden;
+        animation: change 1s;
+    }
+
+
+    @keyframes change {
+
+        0%{height: 0px}
+        100%{height: 240px}
+
+}
+
+    @keyframes unchange {
+
+        0%{height: 240px}
+        100%{height: 0}
+
+    }
+
+
+    .message-box{
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
